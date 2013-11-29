@@ -1,0 +1,69 @@
+{
+    "dependencies": [
+        {
+            "interfaces": "pallo\\library\\validation\\factory\\ValidationFactory",
+            "class": "pallo\\application\\validation\\factory\\DependencyValidationFactory",
+            "id": "dependency"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\filter\\Filter",
+            "class": "pallo\\library\\validation\\filter\\TrimFilter",
+            "id": "trim"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\ClassValidator",
+            "id": "class"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\DsnValidator",
+            "id": "dsn"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\EmailValidator",
+            "id": "email"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\FileExtensionValidator",
+            "id": "extension"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\MinMaxValidator",
+            "id": "minmax"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\NumericValidator",
+            "id": "numeric"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\RegexValidator",
+            "id": "regex"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\RequiredValidator",
+            "id": "required"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\SizeValidator",
+            "id": "size"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\UrlValidator",
+            "id": "url"
+        },
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\library\\validation\\validator\\WebsiteValidator",
+            "id": "website"
+        }
+    ]
+}
