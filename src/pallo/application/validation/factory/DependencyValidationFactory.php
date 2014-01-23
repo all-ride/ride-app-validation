@@ -2,6 +2,8 @@
 
 namespace pallo\application\validation\factory;
 
+use pallo\application\validation\validator\DependencyValidator;
+
 use pallo\library\dependency\DependencyInjector;
 use pallo\library\validation\factory\ValidationFactory;
 
@@ -53,7 +55,9 @@ class DependencyValidationFactory implements ValidationFactory {
      * @return null
      */
     protected function processInstance($instance) {
-
+        if ($instance instanceof DependencyValidator) {
+            $instance->processValidator($this->dependencyInjector);
+        }
     }
 
 }
