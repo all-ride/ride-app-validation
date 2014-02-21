@@ -1,11 +1,11 @@
 <?php
 
-namespace pallo\application\validation\factory;
+namespace ride\application\validation\factory;
 
-use pallo\application\validation\validator\DependencyValidator;
+use ride\application\validation\validator\DependencyValidator;
 
-use pallo\library\dependency\DependencyInjector;
-use pallo\library\validation\factory\ValidationFactory;
+use ride\library\dependency\DependencyInjector;
+use ride\library\validation\factory\ValidationFactory;
 
 /**
  * Generic factory for filters and validators
@@ -14,7 +14,7 @@ class DependencyValidationFactory implements ValidationFactory {
 
     /**
      * Constructs a new dependency validation factory
-     * @param pallo\library\dependency\DependencyInjector $dependencyInjector
+     * @param ride\library\dependency\DependencyInjector $dependencyInjector
      * @return null
      */
     public function __construct(DependencyInjector $dependencyInjector) {
@@ -25,10 +25,10 @@ class DependencyValidationFactory implements ValidationFactory {
      * Creates a filter
      * @param string $name Machine name of the filter
      * @param array $options Options to construct the filter
-     * @return pallo\library\validation\filter\Filter
+     * @return ride\library\validation\filter\Filter
      */
     public function createFilter($name, array $options) {
-        $filter = $this->dependencyInjector->get('pallo\\library\\validation\\filter\\Filter', $name, array('options' => $options));
+        $filter = $this->dependencyInjector->get('ride\\library\\validation\\filter\\Filter', $name, array('options' => $options));
 
         $this->processInstance($filter);
 
@@ -39,10 +39,10 @@ class DependencyValidationFactory implements ValidationFactory {
      * Creates a validator
      * @param string $name Machine name of the validator
      * @param array $options Options to construct the validator
-     * @return pallo\library\validation\validator\Validator
+     * @return ride\library\validation\validator\Validator
      */
     public function createValidator($name, array $options) {
-        $validator = $this->dependencyInjector->get('pallo\\library\\validation\\validator\\Validator', $name, array('options' => $options));
+        $validator = $this->dependencyInjector->get('ride\\library\\validation\\validator\\Validator', $name, array('options' => $options));
 
         $this->processInstance($validator);
 
