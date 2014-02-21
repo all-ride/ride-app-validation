@@ -1,68 +1,68 @@
 {
     "dependencies": [
         {
-            "interfaces": "pallo\\library\\validation\\factory\\ValidationFactory",
-            "class": "pallo\\application\\validation\\factory\\DependencyValidationFactory",
+            "interfaces": "ride\\library\\validation\\factory\\ValidationFactory",
+            "class": "ride\\application\\validation\\factory\\DependencyValidationFactory",
             "id": "dependency"
         },
         {
-            "interfaces": "pallo\\library\\validation\\filter\\Filter",
-            "class": "pallo\\library\\validation\\filter\\TrimFilter",
+            "interfaces": "ride\\library\\validation\\filter\\Filter",
+            "class": "ride\\library\\validation\\filter\\TrimFilter",
             "id": "trim"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\ClassValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\ClassValidator",
             "id": "class"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\DsnValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\DsnValidator",
             "id": "dsn"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\EmailValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\EmailValidator",
             "id": "email"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\FileExtensionValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\FileExtensionValidator",
             "id": "extension"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\MinMaxValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\MinMaxValidator",
             "id": "minmax"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\NumericValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\NumericValidator",
             "id": "numeric"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\RegexValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\RegexValidator",
             "id": "regex"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\RequiredValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\RequiredValidator",
             "id": "required"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\SizeValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\SizeValidator",
             "id": "size"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\UrlValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\UrlValidator",
             "id": "url"
         },
         {
-            "interfaces": "pallo\\library\\validation\\validator\\Validator",
-            "class": "pallo\\library\\validation\\validator\\WebsiteValidator",
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\WebsiteValidator",
             "id": "website"
         }
     ]
