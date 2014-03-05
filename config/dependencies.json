@@ -11,6 +11,21 @@
             "id": "trim"
         },
         {
+            "interfaces": "ride\\library\\validation\\filter\\Filter",
+            "class": "ride\\library\\validation\\filter\\ReplaceFilter",
+            "id": "replace"
+        },
+        {
+            "interfaces": "ride\\library\\validation\\filter\\Filter",
+            "class": "ride\\library\\validation\\filter\\LowerCaseFilter",
+            "id": "lower"
+        },
+        {
+            "interfaces": "ride\\library\\validation\\filter\\Filter",
+            "class": "ride\\library\\validation\\filter\\UpperCaseFilter",
+            "id": "upper"
+        },
+        {
             "interfaces": "ride\\library\\validation\\validator\\Validator",
             "class": "ride\\library\\validation\\validator\\ClassValidator",
             "id": "class"
