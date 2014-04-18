@@ -14,7 +14,7 @@ class DependencyValidationFactory implements ValidationFactory {
 
     /**
      * Constructs a new dependency validation factory
-     * @param ride\library\dependency\DependencyInjector $dependencyInjector
+     * @param \ride\library\dependency\DependencyInjector $dependencyInjector
      * @return null
      */
     public function __construct(DependencyInjector $dependencyInjector) {
@@ -25,7 +25,7 @@ class DependencyValidationFactory implements ValidationFactory {
      * Creates a filter
      * @param string $name Machine name of the filter
      * @param array $options Options to construct the filter
-     * @return ride\library\validation\filter\Filter
+     * @return \ride\library\validation\filter\Filter
      */
     public function createFilter($name, array $options) {
         $filter = $this->dependencyInjector->get('ride\\library\\validation\\filter\\Filter', $name, array('options' => $options));
@@ -39,7 +39,7 @@ class DependencyValidationFactory implements ValidationFactory {
      * Creates a validator
      * @param string $name Machine name of the validator
      * @param array $options Options to construct the validator
-     * @return ride\library\validation\validator\Validator
+     * @return \ride\library\validation\validator\Validator
      */
     public function createValidator($name, array $options) {
         $validator = $this->dependencyInjector->get('ride\\library\\validation\\validator\\Validator', $name, array('options' => $options));
