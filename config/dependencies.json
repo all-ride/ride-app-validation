@@ -26,6 +26,11 @@
             "id": "upper"
         },
         {
+            "interfaces": "ride\\library\\validation\\filter\\Filter",
+            "class": "ride\\library\\validation\\filter\\SafeStringFilter",
+            "id": "safeString"
+        },
+        {
             "interfaces": "ride\\library\\validation\\validator\\Validator",
             "class": "ride\\library\\validation\\validator\\ClassValidator",
             "id": "class"
