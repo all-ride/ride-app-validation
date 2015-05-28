@@ -7,6 +7,11 @@
         },
         {
             "interfaces": "ride\\library\\validation\\filter\\Filter",
+            "class": "ride\\library\\validation\\filter\\AllowCharacterFilter",
+            "id": "characters"
+        },
+        {
+            "interfaces": "ride\\library\\validation\\filter\\Filter",
             "class": "ride\\library\\validation\\filter\\TrimFilter",
             "id": "trim"
         },
