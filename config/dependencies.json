@@ -6,6 +6,87 @@
             "id": "dependency"
         },
         {
+            "interfaces": "ride\\library\\validation\\constraint\\Constraint",
+            "class": "ride\\library\\validation\\constraint\\ChainConstraint",
+            "id": "chain"
+        },
+        {
+            "interfaces": "ride\\library\\validation\\constraint\\Constraint",
+            "class": "ride\\library\\validation\\constraint\\ConditionalConstraint",
+            "id": "conditional",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "reflectionHelper",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\reflection\\ReflectionHelper"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "interfaces": "ride\\library\\validation\\constraint\\Constraint",
+            "class": "ride\\library\\validation\\constraint\\EqualsConstraint",
+            "id": "equals",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "reflectionHelper",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\reflection\\ReflectionHelper"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "interfaces": "ride\\library\\validation\\constraint\\Constraint",
+            "class": "ride\\library\\validation\\constraint\\GenericConstraint",
+            "id": "generic",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "reflectionHelper",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\reflection\\ReflectionHelper"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "interfaces": "ride\\library\\validation\\constraint\\Constraint",
+            "class": "ride\\library\\validation\\constraint\\OrConstraint",
+            "id": "or",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "reflectionHelper",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\reflection\\ReflectionHelper"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "interfaces": "ride\\library\\validation\\filter\\Filter",
             "class": "ride\\library\\validation\\filter\\AllowCharacterFilter",
             "id": "characters"
