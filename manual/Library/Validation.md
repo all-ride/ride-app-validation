@@ -34,6 +34,23 @@ Options:
 * __search__: Value to look for
 * __replace__: Value to replace with
 
+### characters
+
+Filters all non-allowed characters from a string.
+
+Options:
+
+- __characters__: all allowed characters, characters not found in this string, will be trimmed out (string)
+
+### safeString
+
+Transforms a string to a safe string for URL's or file names.
+
+Options: 
+
+- __replacement__: replacement for special characters, defaults to - (string|optional)
+- __lower__: transform to lower case, defaults to true (boolean|optional)
+
 ## Validators
 
 ### class
@@ -203,3 +220,32 @@ Errors:
 
 * __error.validation.required__
 * __error.validation.website__
+
+## Constraints
+
+The _Constraint_ interface is used to validate a data container.
+A data container can be an array or an object.
+
+### generic
+
+The _GenericConstraint_ is a combination of filters and validators which can be applied on specific properties of the data container.
+
+### or
+
+The _OrConstraint_ defines a set of properties for which at least one has to be provided.
+When constraining, it will add a validation error to all properties when none of them is provided.
+
+### equals
+
+The _EqualsConstraint_ defines a set of properties which have to have the same value.
+Usefull when asking to repeat a new password.
+
+### conditional
+
+The _ConditionalConstraint_ is a generic constraint which only validates when defined properties contain a specific value.
+Usefull for properties which are dependant on a type or status.
+
+### chain
+
+The _ChainConstraint_ is used to combine different constraints together into one.
+Usefull to build a full validation for a complex data type.

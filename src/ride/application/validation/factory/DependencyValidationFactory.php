@@ -22,17 +22,23 @@ class DependencyValidationFactory implements ValidationFactory {
     }
 
     /**
+     * Creates a constraint
+     * @param string $name Machine name of the constraint
+     * @return \ride\library\validation\constraint\Constraint
+     */
+
+    public function createConstraint($name) {
+        return $this->dependencyInjector->get('ride\\library\\validation\\constraint\\Constraint', $name, array(), true);
+    }
+
+    /**
      * Creates a filter
      * @param string $name Machine name of the filter
      * @param array $options Options to construct the filter
      * @return \ride\library\validation\filter\Filter
      */
     public function createFilter($name, array $options) {
-        $filter = $this->dependencyInjector->get('ride\\library\\validation\\filter\\Filter', $name, array('options' => $options));
-
-        $this->processInstance($filter);
-
-        return $filter;
+        return $this->dependencyInjector->get('ride\\library\\validation\\filter\\Filter', $name, array('options' => $options), true);
     }
 
     /**
@@ -42,7 +48,7 @@ class DependencyValidationFactory implements ValidationFactory {
      * @return \ride\library\validation\validator\Validator
      */
     public function createValidator($name, array $options) {
-        $validator = $this->dependencyInjector->get('ride\\library\\validation\\validator\\Validator', $name, array('options' => $options));
+        $validator = $this->dependencyInjector->get('ride\\library\\validation\\validator\\Validator', $name, array('options' => $options), true);
 
         $this->processInstance($validator);
 
