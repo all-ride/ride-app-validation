@@ -98,6 +98,11 @@
         },
         {
             "interfaces": "ride\\library\\validation\\filter\\Filter",
+            "class": "ride\\library\\validation\\filter\\StripTagsFilter",
+            "id": "striptags"
+        },
+        {
+            "interfaces": "ride\\library\\validation\\filter\\Filter",
             "class": "ride\\library\\validation\\filter\\ReplaceFilter",
             "id": "replace"
         },
