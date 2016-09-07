@@ -99,7 +99,7 @@
         {
             "interfaces": "ride\\library\\validation\\filter\\Filter",
             "class": "ride\\library\\validation\\filter\\StripTagsFilter",
-            "id": "striptags"
+            "id": "stripTags"
         },
         {
             "interfaces": "ride\\library\\validation\\filter\\Filter",
