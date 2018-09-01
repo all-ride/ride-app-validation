@@ -143,6 +143,11 @@
         },
         {
             "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\JsonValidator",
+            "id": "json"
+        },
+        {
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
             "class": "ride\\library\\validation\\validator\\MinMaxValidator",
             "id": "minmax"
         },
