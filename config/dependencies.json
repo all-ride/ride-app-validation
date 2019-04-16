@@ -93,6 +93,11 @@
         },
         {
             "interfaces": "ride\\library\\validation\\filter\\Filter",
+            "class": "ride\\library\\validation\\filter\\EscapeFilter",
+            "id": "escape"
+        },
+        {
+            "interfaces": "ride\\library\\validation\\filter\\Filter",
             "class": "ride\\library\\validation\\filter\\TrimFilter",
             "id": "trim"
         },
