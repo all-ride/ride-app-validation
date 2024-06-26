@@ -11,6 +11,7 @@ use ride\library\validation\factory\ValidationFactory;
  * Generic factory for filters and validators
  */
 class DependencyValidationFactory implements ValidationFactory {
+    protected $dependencyInjector;
 
     /**
      * Constructs a new dependency validation factory
